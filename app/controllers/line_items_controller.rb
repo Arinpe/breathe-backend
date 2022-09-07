@@ -1,3 +1,4 @@
+class LineItemController < ApplicationController
 def create
   before_action :authorize_request
     # Find associated product and current cart
