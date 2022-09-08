@@ -48,3 +48,4 @@ def create
         @line_item.save
         redirect_to cart_path(@current_cart)
       end
+end
