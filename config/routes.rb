@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'products/edit'
   get 'carts/show'
   get '/webhook', to: 'transaction#webhook'
+  get '/', to: 'root#index'
   resources :users, param: :_username
   post '/auth/login', to: 'authentication#login'
   post 'line_items/:id/add' => "line_items#add_quantity", as: "line_item_add"
